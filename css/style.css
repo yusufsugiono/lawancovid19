@@ -1,0 +1,199 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: #E8E0F8;
+    background-color: #222840;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .jumbotron {
+    background-image: url(../images/covid_background2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 650px;
+    border-radius: 0 !important; 
+  }
+  
+  .jumbotron img {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, 25px);
+
+  }
+  .jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0,0.8);
+    opacity: 0;
+    transition: 2s;
+  }
+
+  .jumbotron img.muncul{
+    transform: translate(0,0);
+  }
+
+  .jumbotron h1.muncul, .jumbotron p.muncul, .jumbotron img.muncul {
+    opacity: 1;
+  }
+
+  .jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0,0.8);
+    opacity: 0;
+  }
+
+  .jumbotron h1 {
+    font-weight: 700;
+    color: #02B29F;
+  }
+
+  .jumbotron p {
+    color: #E8E0F8;
+    font-size: 14pt;
+  }
+
+  section {
+    min-height: 650px; 
+  }
+
+  section h2 {
+    color: #02B29F !important;
+  }
+  
+  section p{
+    color: #E8E0F8;
+  }
+
+  #penularan .contentpenularan {
+    text-align: left;
+    font-size: 14pt;
+  }
+  
+  #penularan .gambarpenularan {
+      margin-top: 50px;
+      width: 35%;
+      visibility: visible;
+    }
+  
+  #penularan .judulnya, #penularan .kontennya {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  #penularan .kontennya {
+    transform: translate(0, 40px);
+  }
+  
+  #penularan .kontennya.muncul, #penularan .judulnya.muncul {
+    opacity: 1;
+  }
+
+  #penularan .kontennya.muncul {
+    transform: translate(0, 0);
+  }
+
+  #pencegahan {
+    background-color: #253050;
+  }
+
+  #pencegahan .card {
+    background-color: #4c6085;
+    color: #E8E0F8;
+    border: none;
+    box-shadow: 5px 5px 20px rgba(0,0,0, 0.3); 
+    min-height: 425px;
+  }
+
+
+  #pencegahan .judulnya, #pencegahan .card{
+    opacity: 0;
+    transition: 1s;
+  }
+
+  #pencegahan .card {
+    transform: translate(0, 40px);
+  }
+
+  #pencegahan .card.muncul {
+    transform: translate(0, 0);
+  }
+
+  #pencegahan .judulnya.muncul, #pencegahan .card.muncul{
+    opacity: 1;
+  }
+
+  #tesdiri h2, #tesdiri .card {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  #tesdiri .card {
+    transform: translate(0,25px);
+  }
+  
+  #tesdiri .card.muncul {
+    transform: translate(0,0);
+  }
+
+  #tesdiri h2.muncul, #tesdiri .card.muncul {
+    opacity: 1;
+  }
+
+  #tesdiri .card {
+    min-height: 400px;
+    background-color: #253050;
+    color: inherit;
+    border: none;
+    box-shadow: 5px 5px 20px rgba(0,0,0, 0.3);
+  }
+
+  #tesdiri .card .progress {
+    height: 5px;
+    background-color: #374775;
+  }
+
+  #tesdiri .card .progress-bar{
+    width: 0%;
+    background-color: #02B29F;
+  }
+
+  #tesdiri .card h4{
+    margin-top: 50px;
+  }
+
+  .btn {
+    background-color: #2f3a5b;
+    color: #0c9b8a;
+  }
+
+  .btn:hover {
+    background-color: #0c9b8a;
+    color : #2f3a5b;
+  }
+
+  .btn.ya , .btn.tdk {
+    width: 50px;
+  }
+
+  .card-footer {
+    height: 73px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* HP: */
+    #penularan .gambarpenularan {
+      display: none;
+    }
+
+    #penularan .contentpenularan {
+      text-align: center;
+
+    }
+
+    #pencegahan .card {
+    min-height: 250px;
+    }
+
+    #tesdiri .card h4{
+    margin-top: 0px;
+  }
+  }
